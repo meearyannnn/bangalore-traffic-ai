@@ -13,6 +13,8 @@ export interface TrafficHotspot {
     lng: number;
   };
   lastUpdated: string;
+  weather?: string;
+  incidentReports?: number;
 }
 
 export interface TrafficStats {
@@ -22,4 +24,11 @@ export interface TrafficStats {
   moderateCount: number;
   clearCount: number;
   avgCongestion: number;
+}
+
+export interface DatasetInfo {
+  filename: string;
+  rowCount: number;
+  dateRange: string;
+  uploadedAt: Date;
 }
