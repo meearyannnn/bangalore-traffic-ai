@@ -3,7 +3,7 @@ import { AlertTriangle, TrendingUp, Car, Activity } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { StatsCard } from '@/components/StatsCard';
 import { FilterBar } from '@/components/FilterBar';
-import { MapView } from '@/components/MapView';
+import { RealMap } from '@/components/RealMap';
 import { HotspotList } from '@/components/HotspotList';
 import { DataUploader } from '@/components/DataUploader';
 import { mockHotspots, mockStats } from '@/data/mockTrafficData';
@@ -122,9 +122,9 @@ const Index = () => {
 
       {/* Main Content */}
       <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
-        {/* Map */}
+        {/* Real Map */}
         <div className="xl:col-span-2 h-[500px]">
-          <MapView
+          <RealMap
             hotspots={filteredHotspots}
             selectedHotspot={selectedHotspot}
             onHotspotSelect={setSelectedHotspot}
