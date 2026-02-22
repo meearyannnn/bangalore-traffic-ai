@@ -1,0 +1,58 @@
+# ==============================
+# ===== FRONTEND (Vite/React)
+# ==============================
+traffic-frontend/node_modules/
+traffic-frontend/dist/
+traffic-frontend/dist-ssr/
+traffic-frontend/.env
+traffic-frontend/*.log
+
+# ==============================
+# ===== PYTHON
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+.env
+
+# ==============================
+# ===== ML / MODEL FILES
+# ==============================
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+backend/model/
+backend/cache/
+backend/uploads/
+
+# ==============================
+# ===== DATA (OPTIONAL)
+# ==============================
+# If dataset is large, ignore it
+Banglore_traffic_Dataset.csv
+
+# ==============================
+# ===== JUPYTER
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# ===== IDE / SYSTEM
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# ===== LOGS
+# ==============================
+*.log
