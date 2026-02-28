@@ -26,6 +26,20 @@ An AI-powered real-time traffic intelligence system for Bangalore, featuring con
 
 ---
 
+## 🔬 Research Focus — Unsupervised Clustering for Traffic Analysis
+
+This project is built on a **research-driven approach** using unsupervised clustering algorithms to extract actionable insights from raw traffic data:
+
+- **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)** — Used to identify traffic congestion **hotspots** by detecting dense clusters of high-traffic GPS points without requiring a predefined number of clusters. DBSCAN naturally handles noise and discovers arbitrarily shaped congestion zones across Bangalore's road network.
+
+- **K-Means Clustering** — Used to segment Bangalore into distinct **traffic zones** based on traffic volume, average speed, and geographic proximity. This enables zone-level congestion monitoring and region-wise traffic pattern analysis.
+
+Together, these two complementary clustering techniques form the analytical backbone of the system — DBSCAN for **fine-grained hotspot detection** and K-Means for **macro-level zone segmentation** — enabling a multi-scale understanding of urban traffic dynamics.
+
+> 📓 See [`models/02_dbscan_hotspot_detection.ipynb`](models/02_dbscan_hotspot_detection.ipynb) and [`models/03_kmeans_zone_clustering.ipynb`](models/03_kmeans_zone_clustering.ipynb) for the full implementation.
+
+---
+
 ## ✨ Features
 
 ### 🔮 Traffic Prediction
